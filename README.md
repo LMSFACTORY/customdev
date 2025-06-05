@@ -30,9 +30,6 @@ This folder contains forms and functionalities for managing different types of u
    - Update or manage profiles with `updateprofile.php` or the corresponding CRUD scripts.
 4. **CRUD Operations:** Use the provided CRUD functions in the scripts to manage user records.
 
-### Contributing
-Feel free to open issues or submit pull requests for improvements.
-
 ---
 
 ## Français
@@ -63,11 +60,7 @@ Ce dossier contient des formulaires et fonctionnalités pour gérer différents 
    - Gérer ou mettre à jour les profils via `updateprofile.php` ou les scripts CRUD correspondants.
 4. **Opérations CRUD :** Utiliser les fonctions CRUD fournies dans les scripts pour gérer les enregistrements utilisateurs.
 
-### Contribution
-N’hésitez pas à ouvrir une issue ou à proposer une pull request pour toute amélioration.
-
 ---
 
 ## License / Licence
-This project is licensed under the GNU GPL v3.  
-Ce projet est sous licence GNU GPL v3.
+LMS Factory
