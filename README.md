@@ -38,12 +38,12 @@ Feel free to open issues or submit pull requests for improvements.
 ## Français
 
 ### Description
-Ce dossier contient des formulaires et fonctionnalités pour gérer différents types d’utilisateurs. Il propose des formulaires d’inscription pour les utilisateurs particuliers et professionnels, la mise à jour de profil, ainsi que des opérations CRUD complètes (Créer, Lire, Mettre à jour, Supprimer) pour gérer les enregistrements. La solution intègre également divers fichiers utilitaires — tels que les codes pays et les données régionales — pour faciliter la validation et le traitement des données.
+Ce dossier contient des formulaires et fonctionnalités pour gérer différents types d’utilisateurs. Il propose des formulaires de création de compte pour les utilisateurs particuliers et professionnels, la mise à jour de profil, ainsi que des opérations CRUD complètes (Créer, Lire, Mettre à jour, Supprimer) pour gérer les enregistrements. La solution intègre également divers fichiers utilitaires — tels que les codes pays et les données régionales — pour faciliter la validation et le traitement des données.
 
 ### Fonctionnalités
-- **Inscription des Utilisateurs :**
-  - Formulaire d’inscription pour particuliers.
-  - Formulaire d’inscription pour professionnels.
+- **Création des Utilisateurs :**
+  - Formulaire de création des comptes particuliers.
+  - Formulaire de création des comptes professionnels.
 - **Gestion du Profil :**
   - Mise à jour des informations de profil.
   - Validation des formulaires et gestion des erreurs.
@@ -59,7 +59,7 @@ Ce dossier contient des formulaires et fonctionnalités pour gérer différents 
 2. **Intégration :** Veiller à inclure la configuration (par exemple, `config.php`) et les classes dépendantes nécessaires.
 3. **Accès aux Formulaires :**
    - Utiliser `index.php` comme point d’entrée pour choisir le type d’inscription.
-   - Accéder à `personal_form.php` ou `professional_form.php` pour l’inscription des utilisateurs.
+   - Accéder à `personal_form.php` ou `professional_form.php` pour la création des utilisateurs.
    - Gérer ou mettre à jour les profils via `updateprofile.php` ou les scripts CRUD correspondants.
 4. **Opérations CRUD :** Utiliser les fonctions CRUD fournies dans les scripts pour gérer les enregistrements utilisateurs.
 
