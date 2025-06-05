@@ -1,0 +1,401 @@
+.path-customdev-customproviders #page,
+.path-customdev-customproviders div#page-content {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+/*.path-customdev-customproviders #learningcontent,*/
+/*.path-customdev-customproviders #region-main,*/
+/*!*.path-customdev-customproviders #learningcontent .card,*!*/
+/*.path-customdev-customproviders #page {*/
+/*    background: transparent !important;*/
+/*}*/
+
+.path-customdev-customproviders #learningcontent:not(.path-customdev-customproviders-base_provider),
+#page-customdev-customproviders-index #region-main:not(.path-customdev-customproviders-base_provider),
+#page-customdev-customproviders-information_form #region-main:not(.path-customdev-customproviders-base_provider),
+#page-customdev-customproviders-update_provider #region-main:not(.path-customdev-customproviders-base_provider),
+#page-customdev-customproviders-upload_documents #region-main:not(.path-customdev-customproviders-base_provider),
+.path-customdev-customproviders #page:not(.path-customdev-customproviders-base_provider) {
+    background: transparent !important;
+}
+
+.provider__wrapper {
+    padding: 2rem;
+}
+
+.provider__wrapper__footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.choice_container_header h3,
+.form_container_header h3,
+h3.p-3.fw-semibold {
+    color: var(--black);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.choice_container_body {
+    gap: 1.5em;
+}
+
+.section {
+    border: 1px solid lightgray;
+    padding: 15px;
+    box-shadow: 0 1px 4px lightgray;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+.section_header {
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_header h4 {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.section_body {
+    margin-top: 15px;
+}
+
+.sidebar {
+    background-color: white;
+    min-height: 60vh;
+}
+
+
+.progress_custom {
+    flex: 1 0 35%;
+    min-width: 300px;
+    padding-top: 3em;
+}
+
+
+.progress_custom .progress_steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.progress_steps li {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.progress_steps li > span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--secondary);
+    z-index: 1;
+}
+
+.progress_steps li.active p {
+    font-weight: bold;
+    color: black;
+}
+
+.progress_steps li.active > span {
+    color: #fff;
+    background-color: var(--primary);
+    border: 4px solid var(--secondary);
+    z-index: 1;
+}
+
+.progress_steps li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 2px;
+    height: 100%;
+    background: lightgrey;
+}
+
+.path-customdev .section a {
+    margin-top: 0 !important;
+}
+
+.tag-container {
+    margin: 20px;
+    max-width: 800px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category,
+.tag {
+    width: fit-content;
+    padding: 5px 12px;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--primary);
+    transition: all 0.2s;
+}
+
+.category.selected,
+.tag.selected {
+    background-color: var(--primary);
+    color: white;
+}
+
+#selectedTags {
+    display: none;
+}
+
+.zone-container {
+    position: relative;
+}
+
+div[data-category="Etranger"].category,
+div[data-category="CORSE"].category,
+div[data-category="France"].category,
+div[data-category="Formalités d'entreprises"].category,
+div[data-category="Droit d'auteur"].category {
+    display: none;
+}
+
+div[data-category="France"].tags {
+    position: absolute;
+    top: -8px;
+    left: 6rem;
+}
+
+
+.container__input {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container__input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container__input:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container__input input:checked ~ .checkmark {
+    background-color: var(--primary) !important;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container__input input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container__input .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.form-control.dateInput {
+    width: 80%;
+}
+
+.date_container_header p {
+    margin-top: 1rem !important;
+    margin-bottom: 6px !important;
+}
+
+.provider__card {
+    margin: 5px 0;
+    border: 1px solid lightgray;
+}
+
+.provider__card button {
+    border: none;
+    color: black;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.provider__card .badge {
+    background-color: #DAE6E5 !important;
+    border: 1px solid #DAE6E5;
+    color: #333;
+}
+
+#left,
+#center {
+    position: relative;
+}
+
+#center .col-md-6 {
+    padding: 0 !important;
+}
+
+#left::after,
+#center::after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: lightgray;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#page-customdev-customproviders-base_provider .custom-menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 2;
+}
+
+#page-customdev-customproviders-base_provider .custom-menu #dropdownMenuButton::after,
+#page-customdev-customproviders-base_provider .custom-menu #dropdownMenuButton::before {
+    display: none;
+}
+
+/*** For the trigger button ***/
+.form-trigger {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+iframe #page-header {
+    display: none;
+}
+
+/* Pour le hauteur de selector sur la page de base fournisseurs */
+select#domain_excellence,
+select#zone_intervention {
+    min-height: 155px;
+}
+
+
+.path-customdev-customproviders .alert {
+    margin-top: 30px !important;
+}
+
+
+/* For the page Custom profile Provider */
+
+.status_badge {
+    min-width: fit-content;
+    max-width: 250px;
+}
+
+
+#page-customdev-customproviders-provider_profile_page .custom-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#page-customdev-customproviders-provider_profile_page .custom-menu #dropdownMenuButton::before {
+    display: none;
+}
+
+.info_cell * {
+    margin: 0.5rem;
+}
+
+.path-customdev-customproviders hr {
+    border-width: 3px !important;
+}
+
+#page-customdev-customproviders-provider_profile_page a#btn_provider_base {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    margin-right: 3%;
+}
+
+#section_uploaded_files h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropleft .dropdown-toggle::before {
+    display: none;
+}
+
+
+@media screen and (max-width: 786px) {
+
+    /* .progress_custom  */
+    .progress_custom .progress_steps {
+        flex-direction: row !important;
+        gap: 2em !important;
+    }
+
+    .progress_steps li:not(:last-child)::before {
+        display: none !important;
+    }
+
+    .sidebar {
+        min-height: auto !important;
+    }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <element>
+      <region_name></region_name>
+   </element>
+   <element>
+      <region_name>Auvergne-Rhône-Alpes</region_name>
+   </element>
+   <element>
+      <region_name>Hauts-de-France</region_name>
+   </element>
+   <element>
+      <region_name>Provence-Alpes-Côte d'Azur</region_name>
+   </element>
+   <element>
+      <region_name>Grand Est</region_name>
+   </element>
+   <element>
+      <region_name>Occitanie</region_name>
+   </element>
+   <element>
+      <region_name>Normandie</region_name>
+   </element>
+   <element>
+      <region_name>Nouvelle-Aquitaine</region_name>
+   </element>
+   <element>
+      <region_name>Centre-Val de Loire</region_name>
+   </element>
+   <element>
+      <region_name>Bourgogne-Franche-Comté</region_name>
+   </element>
+   <element>
+      <region_name>Bretagne</region_name>
+   </element>
+   <element>
+      <region_name>Corse</region_name>
+   </element>
+   <element>
+      <region_name>Pays de la Loire</region_name>
+   </element>
+   <element>
+      <region_name>Île-de-France</region_name>
+   </element>
+   <element>
+      <region_name>Guadeloupe</region_name>
+   </element>
+   <element>
+      <region_name>Martinique</region_name>
+   </element>
+   <element>
+      <region_name>Guyane</region_name>
+   </element>
+   <element>
+      <region_name>La Réunion</region_name>
+   </element>
+   <element>
+      <region_name>Mayotte</region_name>
+   </element>
+</root>

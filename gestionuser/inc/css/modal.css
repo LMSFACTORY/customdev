@@ -1,0 +1,366 @@
+/* modal-opco */
+
+/* =============================================== */
+
+.modal-opco-container {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 10;
+
+  display: none;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: hsla(0, 0%, 40%, 0.2);
+}
+
+/* using :target */
+
+.modal-opco-container:target {
+  display: flex;
+}
+
+.modal-opco {
+  width: 900px;
+
+  background: var(--background);
+
+  box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(236, 50%, 50%, 0.3);
+
+  position: relative;
+
+  top: -150px;
+
+  overflow: hidden;
+}
+
+.modal-opco__details {
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+  padding-bottom: 4rem;
+
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
+}
+
+.modal-opco__title {
+  font-size: 3.2rem;
+}
+
+.modal-opco__description {
+  margin-top: 2rem;
+
+  font-size: 1.6rem;
+
+  font-style: italic;
+}
+
+.modal-opco__text {
+  padding: 0 4rem;
+
+  margin-bottom: 4rem;
+
+  font-size: 1.6rem;
+
+  line-height: 2;
+}
+
+.modal-opco__text::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0%;
+
+  left: 100%;
+
+  transform: translate(-50%, -50%);
+
+  width: 18rem;
+
+  height: 18rem;
+
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+
+  border-radius: 100rem;
+
+  pointer-events: none;
+}
+
+.modal-opco__btn {
+  padding: 1rem 1.6rem;
+
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+
+  border-radius: 100rem;
+
+  color: inherit;
+
+  background: transparent;
+
+  font-size: 1.4rem;
+
+  font-family: inherit;
+
+  letter-spacing: 0.2rem;
+
+  transition: 0.2s;
+
+  cursor: pointer;
+}
+
+.modal-opco__btn:hover,
+.modal-opco__btn:focus {
+  border-color: hsla(0, 0%, 100%, 0.6);
+
+  transform: translateY(-0.2rem);
+}
+
+/* links */
+
+.link-2 {
+  width: 4rem;
+
+  height: 4rem;
+
+  border: 1px solid #f7cece;
+
+  border-radius: 100rem;
+
+  color: inherit;
+
+  font-size: 2.2rem;
+
+  position: absolute;
+
+  margin: 10px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.link-2::before {
+  content: "×";
+
+  transform: translateY(-0.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  border-color: hsla(0, 0%, 100%, 0.6);
+
+  transform: translateY(-0.2rem);
+}
+
+/* Second Version Link */
+
+.second-version-link,
+.second-version-link:link {
+  color: hsl(236, 50%, 50%);
+
+  padding: 0.8rem 1.6rem 0.8rem 0.2rem;
+
+  border-bottom: 2px solid hsl(236, 50%, 50%);
+
+  font-size: 1.4rem;
+
+  font-weight: bold;
+
+  position: absolute;
+
+  top: 4rem;
+
+  right: 4rem;
+}
+
+.second-version-link::after {
+  content: "\2197";
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  font-size: 0.9em;
+}
+
+.abs-site-link {
+  position: fixed;
+
+  bottom: 20px;
+
+  left: 20px;
+
+  color: hsla(0, 0%, 0%, 0.6);
+
+  font-size: 1.6rem;
+}
+
+/*élargir la page*/
+
+body#page-admin-users_management_npdv-index #page-content {
+  padding: 0;
+}
+
+body#page-admin-users_management_npdv-index #fonction-main {
+  padding: 0;
+}
+
+body#page-admin-users_management_npdv-index #page-header {
+  display: none;
+}
+
+body#page-admin-users_management_npdv-index .navbar {
+  max-height: inherit;
+
+  margin-top: -1px;
+}
+
+body#page-customdev-gestionuser-index .nav-link.active {
+  background-color: #00798c!important;
+  color: #fff !important;
+}
+
+body#page-customdev-gestionuser-index #page-header {
+  display: none;
+}
+body#page-customdev-gestionuser-index .nav-tabs,
+body#page-customdev-gestionuser-index .nav-link {
+  color: #00798c !important;
+}
+
+
+body#page-customdev-gestionuser-index header nav.navbar {
+  background-color: #00798c !important;
+}
+
+/*supprimer la dernière espace dans le menu déroulant Nom établissement
+
+
+
+body#page-customdev-gestionuser-index select#nom_etab.form-control option:last-child{
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+*/
+
+/*supprimer la dernière espace dans la liste à puce numérotée Nom établissement*/
+
+body#page-customdev-gestionuser-index tbody tr td.oddeven ol li:last-child {
+  display: none;
+}
+
+/*styliser les btn gestion des utilisateurs et deposer un fichier*/
+
+.opcobuttons {
+  margin: 10%;
+
+  text-align: center;
+}
+
+.opcobtn {
+  display: block;
+
+  width: 270px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  margin: auto;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  height: 55px;
+
+  line-height: 3.5;
+
+  text-align: center;
+
+  border: none;
+
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+
+  moz-transition: all 0.4s ease-in-out;
+
+  -o-transition: all 0.4s ease-in-out;
+
+  -webkit-transition: all 0.4s ease-in-out;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.opcobtn:hover {
+  background-position: 100% 0;
+
+  moz-transition: all 0.4s ease-in-out;
+
+  -o-transition: all 0.4s ease-in-out;
+
+  -webkit-transition: all 0.4s ease-in-out;
+
+  transition: all 0.4s ease-in-out;
+
+  text-decoration: none;
+}
+
+.opcobtn:focus {
+  outline: none;
+}
+
+.opcobtn.useropcobtn {
+  background-image: linear-gradient(to right,
+      #852d91,
+      #e83365,
+      #a3a1ff,
+      #f24645);
+
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.opcobtn.fileopcobtn {
+  background-image: linear-gradient(to right,
+      #6253e1,
+      #852d91,
+      #a3a1ff,
+      #f24645);
+
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+#page-customdev-gestionuser-index table th {
+  background: #00798c !important;
+}
